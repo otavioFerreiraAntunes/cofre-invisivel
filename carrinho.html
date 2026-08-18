@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho — Cofre Invisível</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <a href="index.html" class="brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <rect x="1" y="1" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M6 14L9.5 9L12.5 12L16 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      Cofre Invisível
+    </a>
+    <a href="loja.html" class="btn btn--outline btn--sm">Voltar à loja</a>
+  </div>
+</header>
+
+<main class="carrinho-page">
+  <div class="wrap wrap--narrow">
+    <h1 style="margin-top: 40px;">Seu Carrinho</h1>
+
+    <div class="carrinho-grid">
+      <!-- ITENS DO CARRINHO -->
+      <div class="carrinho-main">
+        <div id="carrinho-itens" class="carrinho-itens">
+          <!-- Será preenchido pelo loja.js -->
+        </div>
+      </div>
+
+      <!-- RESUMO E CHECKOUT -->
+      <aside class="carrinho-aside">
+        <div id="carrinho-total" class="carrinho-total-box">
+          <!-- Será preenchido pelo loja.js -->
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer style="padding: 40px 24px; background: var(--navy-800); border-top: 1px solid var(--navy-700); margin-top: 60px;">
+  <div class="wrap" style="text-align: center; color: var(--paper-dim); font-size: 14px;">
+    <p>© 2024 Cofre Invisível. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/produtos.js"></script>
+<script src="js/loja.js"></script>
+</body>
+</html>

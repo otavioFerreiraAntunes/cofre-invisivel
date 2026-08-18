@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Cofre Invisível — Ebook de Educação Financeira</title>
+<meta name="description" content="O guia direto para parar de trabalhar pelo dinheiro e começar a fazer o dinheiro trabalhar por você. Sem economês, sem enrolação.">
+
+<!-- ============================================================
+  EDITAR AQUI: troque o título, descrição e ícone pelo do seu produto.
+============================================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+  BARRA DE COMPRA FIXA (aparece ao rolar a página no celular)
+============================================================= -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-bar__info">
+    <span class="sticky-bar__name">O Cofre Invisível</span>
+    <span class="sticky-bar__price">R$ 47<span class="sticky-bar__cents">,00</span></span>
+  </div>
+  <a href="#" class="btn btn--gold btn--sm js-buy-btn" data-location="sticky">Quero o meu agora</a>
+</div>
+
+<!-- ============================================================
+  CABEÇALHO
+============================================================= -->
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <a href="#top" class="brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <rect x="1" y="1" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M6 14L9.5 9L12.5 12L16 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      Cofre Invisível
+    </a>
+    <div style="display: flex; gap: 12px; align-items: center;">
+      <a href="loja.html" class="btn btn--outline btn--sm">Loja</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================================================
+    HERO — a linha ascendente é o elemento de assinatura da página.
+    Ela "desenha" ao carregar e atravessa o título, ligando a
+    tipografia ao tema do ebook (crescimento do patrimônio).
+  ============================================================= -->
+  <section class="hero">
+    <div class="hero__chart" aria-hidden="true">
+      <svg viewBox="0 0 1000 420" preserveAspectRatio="none" class="hero__chart-svg">
+        <defs>
+          <linearGradient id="lineFade" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#C9A15A" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#C9A15A" stop-opacity="0.9"/>
+          </linearGradient>
+          <linearGradient id="areaFade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#C9A15A" stop-opacity="0.16"/>
+            <stop offset="100%" stop-color="#C9A15A" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <path id="growthLine" class="growth-line"
+          d="M0,380 C 90,375 150,360 210,345 C 280,328 320,300 380,290 C 450,278 500,250 560,220 C 630,185 680,160 740,120 C 810,72 860,55 1000,20"
+          fill="none" stroke="url(#lineFade)" stroke-width="2.5"/>
+        <path class="growth-area"
+          d="M0,380 C 90,375 150,360 210,345 C 280,328 320,300 380,290 C 450,278 500,250 560,220 C 630,185 680,160 740,120 C 810,72 860,55 1000,20 L1000,420 L0,420 Z"
+          fill="url(#areaFade)"/>
+      </svg>
+      <span class="growth-dot" id="growthDot"></span>
+    </div>
+
+    <div class="wrap hero__inner">
+      <p class="eyebrow"><span class="eyebrow__dot"></span>Ebook digital · leitura de 2h · PDF + áudio</p>
+
+      <h1 class="hero__title">
+        A maioria do seu dinheiro
+        <em>já foi gasto</em> antes de cair na conta.
+      </h1>
+
+      <p class="hero__sub">
+        <strong>O Cofre Invisível</strong> é o guia de 8 capítulos para quem ganha bem, trabalha demais
+        e ainda assim chega no fim do mês sem entender pra onde o dinheiro foi. Sem fórmula mágica.
+        Sem economês. Um método de separar, investir e crescer o patrimônio — mesmo começando com pouco.
+      </p>
+
+      <div class="hero__cta">
+        <a href="#" class="btn btn--gold js-buy-btn" data-location="hero">
+          Quero começar hoje — R$ 47
+        </a>
+        <a href="#sumario" class="btn btn--ghost">Ver o que tem dentro</a>
+      </div>
+
+      <p class="hero__trust">Acesso imediato após a compra · Garantia incondicional de 7 dias</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    PROVA SOCIAL RÁPIDA (logos / números de credibilidade)
+  ============================================================= -->
+  <section class="strip">
+    <div class="wrap strip__inner">
+      <div class="strip__stat">
+        <span class="strip__num">3.400+</span>
+        <span class="strip__label">leitores desde o lançamento</span>
+      </div>
+      <div class="strip__divider" aria-hidden="true"></div>
+      <div class="strip__stat">
+        <span class="strip__num">4.9/5</span>
+        <span class="strip__label">avaliação média</span>
+      </div>
+      <div class="strip__divider" aria-hidden="true"></div>
+      <div class="strip__stat">
+        <span class="strip__num">8</span>
+        <span class="strip__label">capítulos práticos</span>
+      </div>
+      <div class="strip__divider" aria-hidden="true"></div>
+      <div class="strip__stat">
+        <span class="strip__num">7 dias</span>
+        <span class="strip__label">de garantia total</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    O PROBLEMA
+  ============================================================= -->
+  <section class="section section--dark">
+    <div class="wrap wrap--narrow">
+      <p class="kicker">O problema não é o quanto você ganha</p>
+      <h2 class="section__title">É que ninguém te ensinou <em>o que fazer</em> com o que sobra.</h2>
+
+      <ul class="checklist">
+        <li>
+          <span class="checklist__icon">×</span>
+          Você já tentou controlar gastos numa planilha e desistiu em duas semanas.
+        </li>
+        <li>
+          <span class="checklist__icon">×</span>
+          Investir parece assunto pra quem já é rico — ou pra quem entende de economia.
+        </li>
+        <li>
+          <span class="checklist__icon">×</span>
+          Toda vez que sobra dinheiro, alguma "emergência" aparece antes de você guardar.
+        </li>
+        <li>
+          <span class="checklist__icon">×</span>
+          Você sabe que precisa começar, mas não sabe qual é o primeiro passo real.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    SUMÁRIO / O QUE TEM DENTRO — estilo "índice de livro".
+    Aqui a numeração faz sentido: são capítulos reais, em ordem.
+  ============================================================= -->
+  <section class="section" id="sumario">
+    <div class="wrap wrap--narrow">
+      <p class="kicker">O que você vai encontrar</p>
+      <h2 class="section__title">8 capítulos. Nenhuma enrolação.</h2>
+
+      <ol class="toc">
+        <li class="toc__item">
+          <span class="toc__num">01</span>
+          <div class="toc__body">
+            <h3>Por que você trabalha tanto e continua no zero</h3>
+            <p>O motivo real pelo qual aumentar a renda nunca resolve sozinho.</p>
+          </div>
+        </li>
+        <li class="toc__item">
+          <span class="toc__num">02</span>
+          <div class="toc__body">
+            <h3>O erro de "guardar o que sobra"</h3>
+            <p>Por que isso nunca funciona — e o que fazer no lugar.</p>
+          </div>
+        </li>
+        <li class="toc__item">
+          <span class="toc__num">03</span>
+          <div class="toc__body">
+            <h3>Os 4 perfis de investidor</h3>
+            <p>Descubra qual deles está sabotando suas decisões sem você perceber.</p>
+          </div>
+        </li>
+        <li class="toc__item">
+          <span class="toc__num">04</span>
+          <div class="toc__body">
+            <h3>O método do Cofre Invisível</h3>
+            <p>Como separar dinheiro antes mesmo de ele "existir" na sua conta.</p>
+          </div>
+        </li>
+        <li class="toc__item">
+          <span class="toc__num">05</span>
+          <div class="toc__body">
+            <h3>Onde colocar o primeiro real</h3>
+            <p>Tesouro Direto, CDB e renda fixa explicados sem economês.</p>
+          </div>
+        </li>
+        <li class="toc__item">
+          <span class="toc__num">06</span>
+          <div class="toc__body">
+            <h3>Como a bolsa realmente funciona</h3>
+            <p>O básico que ninguém te explica antes de te vender um curso caro.</p>
+          </div>
+        </li>
+        <li class="toc__item">
+          <span class="toc__num">07</span>
+          <div class="toc__body">
+            <h3>Construindo uma segunda fonte de renda</h3>
+            <p>Como fazer o dinheiro guardado começar a gerar mais dinheiro.</p>
+          </div>
+        </li>
+        <li class="toc__item">
+          <span class="toc__num">08</span>
+          <div class="toc__body">
+            <h3>O plano de 12 meses</h3>
+            <p>Um cronograma mês a mês pra sair do zero sem depender de sorte.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    AUTORIDADE / SOBRE
+  ============================================================= -->
+  <section class="section section--panel">
+    <div class="wrap wrap--narrow author">
+      <div class="author__avatar" aria-hidden="true">
+        <!-- EDITAR: troque por <img src="sua-foto.jpg" alt="Seu nome"> -->
+        <span>SV</span>
+      </div>
+      <div class="author__text">
+        <p class="kicker">Quem escreveu</p>
+        <h2 class="section__title section__title--sm">Seu Nome Aqui</h2>
+        <p>
+          Escreva aqui duas ou três frases sobre sua trajetória: há quanto tempo você estuda o assunto,
+          quantas pessoas já ajudou, e por que alguém deveria confiar em você pra falar sobre dinheiro.
+          Seja específico — números e fatos convencem mais do que adjetivos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    DEPOIMENTOS
+  ============================================================= -->
+  <section class="section section--dark">
+    <div class="wrap">
+      <p class="kicker">Quem já leu</p>
+      <h2 class="section__title">Resultado de quem colocou em prática.</h2>
+
+      <div class="testimonials">
+        <figure class="testimonial">
+          <blockquote>"Em 3 meses separei mais dinheiro do que em 2 anos tentando sozinho. O capítulo 4 sozinho já vale o ebook."</blockquote>
+          <figcaption>— Mariana T., leitora</figcaption>
+        </figure>
+        <figure class="testimonial">
+          <blockquote>"Sempre achei investimento coisa pra rico. Hoje tenho minha primeira reserva de emergência montada."</blockquote>
+          <figcaption>— Diego R., leitor</figcaption>
+        </figure>
+        <figure class="testimonial">
+          <blockquote>"Direto ao ponto, sem enrolação e sem termo técnico difícil. Li em uma tarde e já apliquei no mesmo dia."</blockquote>
+          <figcaption>— Camila A., leitora</figcaption>
+        </figure>
+      </div>
+      <p class="testimonials__note">* EDITAR: substitua pelos depoimentos reais dos seus clientes (com autorização deles).</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    OFERTA / PREÇO — ponto principal de conversão
+  ============================================================= -->
+  <section class="section offer" id="oferta">
+    <div class="wrap wrap--narrow">
+      <div class="offer__card">
+        <p class="kicker kicker--gold">Acesso completo e vitalício</p>
+        <h2 class="offer__title">O Cofre Invisível</h2>
+        <p class="offer__desc">PDF em alta resolução + versão em áudio + planilha de acompanhamento mensal.</p>
+
+        <ul class="offer__list">
+          <li>8 capítulos completos, em linguagem direta</li>
+          <li>Planilha de acompanhamento mensal (bônus)</li>
+          <li>Versão em áudio para ouvir no trajeto</li>
+          <li>Atualizações futuras inclusas, sem custo extra</li>
+        </ul>
+
+        <div class="offer__price">
+          <span class="offer__price-old">R$ 97</span>
+          <span class="offer__price-new">R$ 47<span class="offer__price-cents">,00</span></span>
+        </div>
+        <p class="offer__price-note">à vista ou em até 12x no cartão</p>
+
+        <a href="#" class="btn btn--gold btn--lg js-buy-btn" data-location="offer">
+          Quero o Cofre Invisível agora
+        </a>
+        <p class="offer__guarantee">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1L14 3.5V7.5C14 11 11.5 13.8 8 15C4.5 13.8 2 11 2 7.5V3.5L8 1Z" stroke="currentColor" stroke-width="1.2"/><path d="M5.5 8L7.3 9.8L10.5 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Garantia incondicional de 7 dias — não gostou, devolvemos 100%.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    FAQ
+  ============================================================= -->
+  <section class="section">
+    <div class="wrap wrap--narrow">
+      <p class="kicker">Perguntas frequentes</p>
+      <h2 class="section__title">Antes de decidir.</h2>
+
+      <div class="faq">
+        <details class="faq__item" open>
+          <summary>Preciso já entender de investimentos?</summary>
+          <p>Não. O ebook foi escrito para quem está começando do zero — cada termo técnico é explicado na primeira vez que aparece.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Em qual formato eu recebo?</summary>
+          <p>PDF para ler no celular, tablet ou computador, mais a versão em áudio. Acesso liberado imediatamente após a confirmação do pagamento.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Funciona pra quem ganha pouco?</summary>
+          <p>Sim — o método do capítulo 4 foi desenhado exatamente para quem sente que "sobra pouco" no fim do mês.</p>
+        </details>
+        <details class="faq__item">
+          <summary>E se eu não gostar?</summary>
+          <p>Você tem 7 dias de garantia. Se não fizer sentido pra você, é só pedir o reembolso — sem perguntas.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    CTA FINAL
+  ============================================================= -->
+  <section class="section final-cta">
+    <div class="wrap wrap--narrow">
+      <h2 class="final-cta__title">Sua próxima decisão sobre dinheiro pode ser diferente de todas as outras.</h2>
+      <a href="#" class="btn btn--gold btn--lg js-buy-btn" data-location="final">
+        Quero o Cofre Invisível — R$ 47
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+  RODAPÉ
+============================================================= -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>© 2026 Cofre Invisível. Todos os direitos reservados.</p>
+    <p class="footer__legal">Produto digital comercializado via Kiwify. Pagamento processado em ambiente seguro.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

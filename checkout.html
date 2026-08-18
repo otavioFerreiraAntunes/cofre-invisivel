@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHECKOUT — COFRE INVISIVEL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <a href="index.html" class="brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <rect x="1" y="1" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M6 14L9.5 9L12.5 12L16 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      Cofre Invisível
+    </a>
+    <a href="carrinho.html" class="btn btn--outline btn--sm">Voltar</a>
+  </div>
+</header>
+
+<main class="checkout-page">
+  <div class="wrap wrap--narrow">
+    <h1 style="margin: 40px 0;">Checkout</h1>
+
+    <div class="checkout-grid">
+      <!-- FORMULÁRIO -->
+      <section class="checkout-form-section">
+        <h2>Dados de Entrega</h2>
+        <form id="checkout-form" class="checkout-form">
+          <div class="form-group">
+            <label for="nome">Nome Completo *</label>
+            <input 
+              type="text" 
+              id="nome" 
+              name="nome" 
+              class="checkout-form__input" 
+              placeholder="Seu nome completo"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="checkout-form__input" 
+              placeholder="seu@email.com"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone (WhatsApp)</label>
+            <input 
+              type="tel" 
+              id="telefone" 
+              name="telefone" 
+              class="checkout-form__input" 
+              placeholder="(11) 99999-9999"
+            >
+          </div>
+
+          <div style="background: var(--navy-800); padding: 20px; border-radius: var(--radius); margin: 30px 0; border: 1px solid var(--navy-700);">
+            <p style="margin: 0 0 15px 0; color: var(--paper-dim); font-size: 14px;">
+              <strong>Próximo passo:</strong> Você será redirecionado para a plataforma segura de pagamento <strong>Kiwify</strong> para completar sua compra.
+            </p>
+            <p style="margin: 0; color: var(--mint); font-size: 13px;">
+              ✓ Pagamento 100% seguro<br>
+              ✓ Múltiplas opções de pagamento<br>
+              ✓ Acesso imediato após confirmação
+            </p>
+          </div>
+
+          <button type="submit" class="btn btn--gold btn--full" style="padding: 18px;">
+            Ir para o Pagamento (Kiwify)
+          </button>
+        </form>
+      </section>
+
+      <!-- RESUMO DO PEDIDO -->
+      <aside class="checkout-sidebar">
+        <h2>Seu Pedido</h2>
+        <div id="resumo-pedido">
+          <!-- Será preenchido pelo checkout.js -->
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer style="padding: 40px 24px; background: var(--navy-800); border-top: 1px solid var(--navy-700); margin-top: 60px;">
+  <div class="wrap" style="text-align: center; color: var(--paper-dim); font-size: 14px;">
+    <p>© 2024 Cofre Invisível. Todos os direitos reservados.</p>
+    <p>Pagamentos processados com segurança pela <strong>Kiwify</strong></p>
+  </div>
+</footer>
+
+<script src="js/produtos.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>
